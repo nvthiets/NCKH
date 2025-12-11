@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý hàng hóa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main-container">
+        <nav class="navbar">
+            Hệ thống kiểm soát hàng hóa
+        </nav>
+        <div class="container">
+            <div class="stats">
+                <div class="stat-box green">
+                    <span>Tổng hàng:</span>
+                    <span id="totalItems">0</span>
+                </div>
+            </div>
+            <input type="text" id="searchInput" placeholder="🔍 Tìm kiếm hàng..." class="search-box">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã hàng</th>
+                            <th>Tên hàng</th>
+                            <th>Số lượng</th>
+                            <th>Ngày cập nhật</th>
+                            <th>Giờ cập nhật</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productTable">
+                        <!-- Dữ liệu từ ESP32 sẽ hiển thị ở đây -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
